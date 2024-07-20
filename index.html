@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/normalize.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Total Price</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <section class="product-item">
+          <img
+            src="assets/img/Notebook.png"
+            alt="Laptop"
+            class="product-img"
+          />
+          <h1 class="product-name">LAPTOP PRO</h1>
+          <div>
+            <input
+              type="text"
+              inputmode="numeric"
+              placeholder="Insert quantity"
+              name=""
+              id="quantity"
+            />
+            <!-- <input type="text" placeholder="Colour" name="" id="choosenColour" /> -->
+            <select name="" id="selectColor">
+              <option value="red">Red</option>
+              <option value="black">Black</option>
+              <option value="blue">Blue</option>
+              <option value="pink">Pink</option>
+            </select>
+          </div>
+          <h2>Unid Price: $<span id="price">900 USD</span></h2>
+          <div class="btn-container">
+            <button id="button">Total</button>
+          </div>
+        </section>
+        <section class="pricing-section">
+          <h2>Total: $<span id="totalPrice">0</span></h2>
+          <h2>Quantity: <span id="quantityToBuy">0</span></h2>
+          <h2 class="color-section">
+            Colour:
+            <div id="color-circle"></div>
+          </h2>
+        </section>
+      </div>
+    </main>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
